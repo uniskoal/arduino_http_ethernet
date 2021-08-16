@@ -1,0 +1,145 @@
+/* 전체 영역의 css 를 표기할 때 *를 사용한다. */
+
+* {
+  margin: 0px;
+}
+
+/* 모니터의 전체 영역을 잡습니다. */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* covervid 제이쿼리 라이브러리를 사용하는 법입니다. */
+
+#covervid-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+
+#covervid-wrapper.hide {
+  display: none;
+}
+
+/* 메인 부분은 relative로 포지션을 잡아야 합니다. */
+
+.main {
+  position: absolute;
+  overflow: auto;
+}
+
+/* 메인 내용 부분의 css 입니다. */
+
+.main_text {
+  font-size: 10vh;
+  letter-spacing: 0.15em;
+  line-height: 2;
+}
+
+
+/* 두번째 영역 css */
+
+.content {
+  width : 100%;
+  height : 100%;
+  position : relative;
+}
+
+table.border {
+  position : relative;
+  font-family: Bungee Shade;
+  width : 75%;
+  height : 70vh;
+  border : 3px solid #fff;
+  border-color : #ffffff;
+  box-shadow : 5px 5px 0px 0px #fff;
+  border-collapse: collapse;
+  margin : auto;
+  text-align : center;
+  z-index : 1;
+}
+
+table tr {
+  height : 130px;
+}
+
+
+table.border td {
+  border : 3px solid #fff;
+  border-color : #ffffff;
+  color : #fff;
+}
+
+tr>td:first-child {
+  width : 15%;
+  text-align : center;
+  line-height: 1px;
+}
+
+tr>td:nth-child(2) {
+  width : 40%;
+  font-size : 4vmin;
+}
+
+table tbody tr[class="padding"] td {
+  padding : 0px 0px 4vw 0px;
+  }
+
+.relay_button1 {
+  position : relative;
+}
+.relay_button2 {
+  position : relative;
+}
+.relay_button3 {
+  position : relative;
+}
+.relay_button4 {
+  position : relative;
+}
+
+#warning {
+  width : 100%;
+  height : 100%;
+  position : absolute;
+  z-index: 2;
+}
+
+#warning .window {
+  font-family: Bungee Shade;
+  color : #fff;
+  width : 500px;
+  height : 300px;
+  position : absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -150px;
+  z-index: 2;
+  background-color: black;
+  border : 3px solid #fff;
+  border-color : #ffffff;
+  box-shadow : 5px 5px 0px 0px #fff;
+  visibility: hidden;
+}
+
+#warning .window>p:first-child {
+  font-size : 5vmin;
+  width : 500px;
+  height: 150px; 
+  display: table-cell; 
+  vertical-align: bottom;
+  text-align: center;
+  line-height: 2;
+}
+
+#warning .window>p:nth-child(2) {
+  font-size : 5vmin;
+  width : 500px;
+  height: 100px; 
+  text-align: center;
+  line-height: 1.8;
+}
